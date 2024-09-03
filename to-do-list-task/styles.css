@@ -1,0 +1,87 @@
+body{
+    background-color:#100a1b ;
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    font-size: 29px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+#todoInput{
+    font-size: 15px;
+    font-weight: 500;
+    width: 170px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+button{    
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    font-size: 15px;
+    width: 10%;
+    height: 24px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    background-color: hsl(125, 47%, 54%);
+}
+
+button:hover{
+    background-color: hsl (125, 47%, 54%);
+}
+
+#container{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#input-container{
+    padding: 10px;
+}
+
+ul{
+    padding-inline-start: 10px;
+    max-width: 580px;
+}
+
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 20px;
+    list-style-type: none;
+}
+
+::marker {
+    display: none;
+}
+
+#todo-list{
+    width: 90%;
+}
+
+  /* checkmark */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(14, 147, 14);
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    top: 10px;
+    right: 16px;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 9px;
+}
+
+ul li.checked {
+    background: #888;
+    text-decoration: line-through;
+}
